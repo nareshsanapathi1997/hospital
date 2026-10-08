@@ -1,0 +1,12 @@
+import re, os, json
+t = open("src/data/doctors.ts", encoding="utf-8-sig").read()
+photos = re.findall(r'photo:\s*"([^"]+)"', t)
+slugs = re.findall(r'slug:\s*"([^"]+)"', t)
+print("count doctors:", len(slugs))
+print("slugs:", slugs)
+have = set(os.listdir("public/img/doctors"))
+want = set(p.replace("img/", "") for p in photos)
+print("referenced:", len(want))
+print("existing:", len(have))
+print("MISSING:", sorted(want - have))
+json.dump({"slugs": slugs, "photos": sorted(want), "missing": sorted(want - have)}, open("scripts/_doctors.json", "w"), indent=1)

@@ -1,0 +1,50 @@
+{
+ "slugs": [
+  "dr-aarav-mehta",
+  "dr-kavya-reddy",
+  "dr-rohan-iyer",
+  "dr-farhan-ali",
+  "dr-meera-nair",
+  "dr-kabir-sinha",
+  "dr-ananya-sharma",
+  "dr-vikram-desai",
+  "dr-ishita-bose",
+  "dr-nandini-rao",
+  "dr-arjun-kulkarni",
+  "dr-tanvi-malhotra",
+  "dr-dev-patel",
+  "dr-sana-qureshi"
+ ],
+ "photos": [
+  "doctors/p12.webp",
+  "doctors/p14.webp",
+  "doctors/p23.webp",
+  "doctors/p26.webp",
+  "doctors/p33.webp",
+  "doctors/p44.webp",
+  "doctors/p45.webp",
+  "doctors/p47.webp",
+  "doctors/p49.webp",
+  "doctors/p5.webp",
+  "doctors/p51.webp",
+  "doctors/p60.webp",
+  "doctors/p65.webp",
+  "doctors/p68.webp"
+ ],
+ "missing": [
+  "doctors/p12.webp",
+  "doctors/p14.webp",
+  "doctors/p23.webp",
+  "doctors/p26.webp",
+  "doctors/p33.webp",
+  "doctors/p44.webp",
+  "doctors/p45.webp",
+  "doctors/p47.webp",
+  "doctors/p49.webp",
+  "doctors/p5.webp",
+  "doctors/p51.webp",
+  "doctors/p60.webp",
+  "doctors/p65.webp",
+  "doctors/p68.webp"
+ ]
+}
