@@ -3,6 +3,7 @@ import { Route, Routes, useLocation, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BottomNav from "./components/BottomNav";
+import ChatLauncher from "./components/ChatLauncher";
 import ScrollToTop from "./components/ScrollToTop";
 import Toast from "./components/Toast";
 import { AppointmentModal } from "./components/AppointmentFlow";
@@ -75,6 +76,7 @@ function Shell() {
       </main>
       <Footer />
       <BottomNav />
+      <ChatLauncher />
 
       <AppointmentModal open={appointmentOpen} seed={appointmentSeed} onClose={closeAppointment} />
       <EmergencyModal open={emergencyOpen} onClose={closeEmergency} />

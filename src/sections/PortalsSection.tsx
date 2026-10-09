@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { ArrowRight, Building2, Stethoscope, User } from "lucide-react";
 import Reveal from "../components/Reveal";
 import { AdminDashboard, DoctorDashboard, PatientDashboard } from "../components/Dashboards";
@@ -8,10 +8,22 @@ const TABS = [
   { id: "patient", label: "Patient Portal", icon: User, blurb: "Appointments, reports, prescriptions, messages and billing in one place." },
   { id: "doctor", label: "Doctor Portal", icon: Stethoscope, blurb: "Today's schedule, patient queue, notes, reports and availability." },
   { id: "admin", label: "Hospital Admin", icon: Building2, blurb: "Appointments, beds, diagnostics, staff and department performance." },
-];
+] as const;
+
+type PortalTab = (typeof TABS)[number]["id"];
+
+function isPortalTab(value: string | null): value is PortalTab {
+  return value === "patient" || value === "doctor" || value === "admin";
+}
 
 export default function PortalsSection() {
-  const [tab, setTab] = useState("patient");
+  const [params] = useSearchParams();
+  const requested = params.get("portal");
+  const [tab, setTab] = useState<PortalTab>(isPortalTab(requested) ? requested : "patient");
+
+  useEffect(() => {
+    if (isPortalTab(requested)) setTab(requested);
+  }, [requested]);
   const active = TABS.find((t) => t.id === tab)!;
 
   return (

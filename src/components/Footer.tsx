@@ -36,7 +36,7 @@ const cols = [
 ];
 
 export default function Footer() {
-  const { openEmergency, openAppointment } = useDemoUI();
+  const { openEmergency } = useDemoUI();
 
   return (
     <footer className="site-footer">
@@ -45,8 +45,8 @@ export default function Footer() {
           <div className="footer-brand">
             <Brand />
             <p>
-              A demonstration multispeciality hospital platform — showing how patients, doctors, diagnostics and hospital
-              operations can be connected through one digital experience.
+              Find a specialist, explore departments and book a visit. Aurelia is a fictional multispeciality hospital
+              demonstration.
             </p>
             <div className="footer-emergency">
               <strong>
@@ -120,10 +120,9 @@ export default function Footer() {
             </svg>
             Powered by <span>Kyntriq Solutions</span>
           </div>
-          <p className="kyntriq-bar__positioning">AI • Software • Automation • Business Systems</p>
-          <button type="button" className="btn btn--sm btn--light" onClick={() => openAppointment({ speciality: "general-medicine" })}>
-            Book a demo walkthrough
-          </button>
+          <Link to="/about" className="kyntriq-bar__positioning">
+            About this demonstration
+          </Link>
         </div>
       </div>
     </footer>

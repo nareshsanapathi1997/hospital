@@ -214,7 +214,7 @@ export default function AiAssistant({ onClose }: { onClose?: () => void }) {
                 <div className="msg__doctors">
                   {m.doctors.map((d) => (
                     <div className="msg-doctor" key={d.slug}>
-                      <img src={d.photo} alt="" className="avatar" width={42} height={42} loading="lazy" />
+                      <img src={`/${d.photo}`} alt="" className="avatar" width={42} height={42} loading="lazy" />
                       <div>
                         <strong>{d.name}</strong>
                         <span>

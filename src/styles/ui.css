@@ -27,14 +27,14 @@
 }
 
 .btn--primary {
-  background: var(--navy-800);
+  background: var(--primary);
   color: #fff;
-  box-shadow: 0 8px 20px -12px rgba(10, 26, 47, 0.9);
+  box-shadow: 0 8px 20px -12px rgba(23, 92, 211, 0.85);
 }
 
 .btn--primary:hover {
-  background: var(--navy-700);
-  box-shadow: 0 14px 26px -14px rgba(10, 26, 47, 0.95);
+  background: var(--primary-700);
+  box-shadow: 0 14px 26px -14px rgba(20, 73, 168, 0.9);
 }
 
 .btn--accent {
@@ -64,7 +64,7 @@
 }
 
 .btn--ghost:hover {
-  border-color: var(--navy-800);
+  border-color: var(--blue-600);
   background: var(--surface);
 }
 

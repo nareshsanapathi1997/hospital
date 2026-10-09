@@ -119,7 +119,10 @@ export default function Hero() {
                 </span>
                 <div>
                   <p className="float-card__label">Next available</p>
-                  <p className="float-card__value">Dr. Aarav Mehta · 10:30 AM</p>
+                  <p className="float-card__value">
+                    Dr. Aarav Mehta
+                    <span className="float-card__time">10:30 AM</span>
+                  </p>
                 </div>
                 <button type="button" className="btn btn--soft btn--sm" onClick={() => openAppointment({ doctorSlug: "dr-aarav-mehta" })}>
                   Book

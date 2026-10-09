@@ -7,10 +7,7 @@ import AiSection from "../sections/AiSection";
 import WhatsAppSection from "../sections/WhatsAppSection";
 import { DiagnosticsSection, PackagesSection, PatientServicesSection } from "../sections/ServicesBlocks";
 import EmergencySection from "../sections/EmergencySection";
-import PortalsSection from "../sections/PortalsSection";
-import { AutomationSection, TechnologySection, WhyKyntriqSection } from "../sections/AutomationSection";
 import { FacilitiesSection, PrivacySection, TestimonialsSection } from "../sections/TrustSection";
-import KyntriqCta from "../sections/KyntriqCta";
 
 export default function Home() {
   return (
@@ -31,14 +28,9 @@ export default function Home() {
       <PackagesSection />
       <DiagnosticsSection />
       <EmergencySection />
-      <PortalsSection />
-      <AutomationSection />
-      <TechnologySection />
-      <WhyKyntriqSection />
       <TestimonialsSection />
       <FacilitiesSection />
       <PrivacySection />
-      <KyntriqCta />
     </>
   );
 }

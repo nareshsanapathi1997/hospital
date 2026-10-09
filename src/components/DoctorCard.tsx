@@ -11,7 +11,7 @@ export default function DoctorCard({ doctor, index = 0 }: { doctor: Doctor; inde
   return (
     <article className="doc-card" style={{ ["--i" as string]: index }}>
       <div className="doc-card__top">
-        <img className="doc-card__photo" src={doctor.photo} alt={`Portrait of ${doctor.name}`} width={96} height={96} loading="lazy" />
+        <img className="doc-card__photo" src={`/${doctor.photo}`} alt={`Portrait of ${doctor.name}`} width={96} height={96} loading="lazy" />
         <div className="doc-card__head">
           <h3 className="doc-card__name">{doctor.name}</h3>
           <p className="doc-card__spec">{dept?.name}</p>

@@ -4,7 +4,9 @@ import Seo from "../components/Seo";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import { FacilitiesSection } from "../sections/TrustSection";
-import { WhyKyntriqSection } from "../sections/AutomationSection";
+import { AutomationSection, TechnologySection, WhyKyntriqSection } from "../sections/AutomationSection";
+import PortalsSection from "../sections/PortalsSection";
+import KyntriqCta from "../sections/KyntriqCta";
 import imageCredits from "../data/imageCredits.json";
 import { departments } from "../data/departments";
 
@@ -106,7 +108,6 @@ export default function AboutPage() {
       </section>
 
       <FacilitiesSection />
-      <WhyKyntriqSection />
 
       <section className="section" aria-labelledby="medical-team">
         <div className="container">
@@ -135,6 +136,12 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <WhyKyntriqSection />
+      <AutomationSection />
+      <TechnologySection />
+      <PortalsSection />
+      <KyntriqCta />
 
       <section className="section section-soft" aria-labelledby="disclosure">
         <div className="container legal">

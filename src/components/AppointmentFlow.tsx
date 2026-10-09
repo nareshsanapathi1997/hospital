@@ -106,6 +106,12 @@ export default function AppointmentFlow({
 
   return (
     <div className="booking" ref={topRef}>
+      <p className="booking__now">
+        <span>
+          Step {step + 1} of {STEPS.length}
+        </span>
+        <span className="booking__now-name">{STEPS[step]}</span>
+      </p>
       <ol className="booking__steps" aria-label="Booking progress">
         {STEPS.map((label, i) => (
           <li
@@ -166,7 +172,7 @@ export default function AppointmentFlow({
                   onClick={() => setDoctorSlug(d.slug)}
                   aria-pressed={doctorSlug === d.slug}
                 >
-                  <img className="avatar" src={d.photo} alt="" width={54} height={54} loading="lazy" />
+                  <img className="avatar" src={`/${d.photo}`} alt="" width={54} height={54} loading="lazy" />
                   <span className="doc-pick__body">
                     <span className="doc-pick__name">{d.name}</span>
                     <span className="doc-pick__meta">
@@ -503,7 +509,7 @@ export function AppointmentModal({
           <div>
             <p className="eyebrow">Book an appointment</p>
             <h2 id="booking-title" style={{ fontSize: "1.4rem", marginTop: 8 }}>
-              Reserve a visit in six steps
+              Reserve a visit
             </h2>
           </div>
           <button type="button" className="icon-btn" onClick={onClose} aria-label="Close booking">

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, Phone, Siren, X, CalendarCheck, Search } from "lucide-react";
+import { Menu, Phone, Siren, X, CalendarCheck } from "lucide-react";
 import { useDemoUI } from "../context/DemoUI";
 
 export const NAV_ITEMS = [
@@ -98,10 +98,6 @@ export default function Header() {
           </nav>
 
           <div className="header-actions">
-            <Link to="/doctors" className="btn btn--ghost btn--sm">
-              <Search size={15} aria-hidden="true" />
-              Find a Doctor
-            </Link>
             <button type="button" className="btn btn--primary btn--sm" onClick={() => openAppointment()}>
               <CalendarCheck size={15} aria-hidden="true" />
               Book Appointment
@@ -109,8 +105,9 @@ export default function Header() {
           </div>
 
           <div className="header-mobile">
-            <button type="button" className="icon-btn icon-btn--emergency" onClick={openEmergency} aria-label="Emergency information">
+            <button type="button" className="icon-btn icon-btn--emergency header-emergency" onClick={openEmergency} aria-label="Emergency, call 108">
               <Siren size={19} aria-hidden="true" />
+              <span className="header-emergency__label">108</span>
             </button>
             <button
               type="button"
