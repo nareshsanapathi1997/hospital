@@ -90,7 +90,7 @@
   --container: 1220px;
   --container-narrow: 900px;
   --gutter: clamp(1.1rem, 0.6rem + 2vw, 2rem);
-  --section-y: clamp(3.75rem, 2.5rem + 5vw, 6.5rem);
+  --section-y: clamp(2.1rem, 1.15rem + 2.2vw, 3.35rem);
   --radius-sm: 10px;
   --radius: 14px;
   --radius-lg: 20px;

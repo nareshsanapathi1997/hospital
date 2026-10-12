@@ -1731,14 +1731,6 @@
   color: rgba(255,255,255,0.88);
 }
 
-/* Diagnostics flow */
-.diagnostics__flow {
-  margin-top: var(--space-5);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-3);
-}
-
 /* AI section demo hint */
 .ai-section__demo {
   margin-top: var(--space-4);
@@ -1777,8 +1769,3 @@
   /* booking week class exists in markup */
 }
 
-@media (max-width: 720px) {
-  .diagnostics__flow {
-    grid-template-columns: 1fr;
-  }
-}

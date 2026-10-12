@@ -88,7 +88,7 @@ export const diagnostics = [
 
 export const diagnosticsWorkflow = [
   { step: "01", title: "Test Booking", text: "Book from the portal, front desk or a doctor's consultation." },
-  { step: "02", title: "Sample / Scan", text: "Check-in with a reference number — no paper slips needed." },
+  { step: "02", title: "Sample or scan", text: "Check-in with a reference number — no paper slips needed." },
   { step: "03", title: "Processing", text: "Status updates flow through the laboratory system." },
   { step: "04", title: "Report", text: "Verified reports are released to the reporting system." },
   { step: "05", title: "Patient Portal", text: "Reports appear in the patient portal with reminders." },

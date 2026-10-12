@@ -173,7 +173,7 @@ hr {
 }
 
 .section-sm {
-  padding-block: clamp(2.5rem, 1.8rem + 3vw, 4rem);
+  padding-block: clamp(1.5rem, 1rem + 1.6vw, 2.4rem);
 }
 
 .section-soft {
@@ -249,8 +249,8 @@ hr {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-  gap: clamp(1rem, 3vw, 2.5rem);
-  margin-bottom: clamp(1.8rem, 1rem + 2vw, 3rem);
+  gap: 1rem;
+  margin-bottom: clamp(1rem, 0.6rem + 1vw, 1.55rem);
 }
 
 .section-head.center {
@@ -264,11 +264,11 @@ hr {
 }
 
 .section-head h2 {
-  margin-top: 14px;
+  margin-top: 8px;
 }
 
 .section-head p {
-  margin-top: 14px;
+  margin-top: 8px;
   font-size: var(--fs-body-lg);
 }
 
